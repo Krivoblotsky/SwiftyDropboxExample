@@ -13,7 +13,8 @@ class AppDelegate: NSObject, NSApplicationDelegate
 {
     func applicationDidFinishLaunching(aNotification: NSNotification)
     {
-        Dropbox.setupWithAppKey("xw7tjjm8rratuo9")
+        //Insert your API Key here
+        Dropbox.setupWithAppKey("319epmp7v6spno5")
     }
 }
 
