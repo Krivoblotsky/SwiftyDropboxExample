@@ -38,11 +38,7 @@ class ViewController: NSViewController {
                         }
                     }
                     
-                    self.filenames = names.map
-                    {
-                        let entry = DropBoxEntry(name: $0)
-                        return entry
-                    }
+                    self.filenames = names.map {DropBoxEntry(name: $0)}
                 }
             }
         }
