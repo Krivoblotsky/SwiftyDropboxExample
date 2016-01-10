@@ -33,6 +33,7 @@
 		A788598F1C40B07C001F013A /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788597E1C40B07C001F013A /* UsersRoutes.swift */; };
 		A78859941C4131A5001F013A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78859911C412ED8001F013A /* Alamofire.framework */; };
 		A78859951C4131A5001F013A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A78859911C412ED8001F013A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A78859981C428F48001F013A /* DropboxConnectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859971C428F48001F013A /* DropboxConnectController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		A788597E1C40B07C001F013A /* UsersRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRoutes.swift; sourceTree = "<group>"; };
 		A78859911C412ED8001F013A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Dependencies/Alamofire.framework; sourceTree = "<group>"; };
 		A78859931C412F53001F013A /* SwiftyDropbox-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SwiftyDropbox-BridgingHeader.h"; path = "SwiftyDropbox/SwiftyDropbox-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
+		A78859971C428F48001F013A /* DropboxConnectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxConnectController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +197,7 @@
 				A788597C1C40B07C001F013A /* Team.swift */,
 				A788597D1C40B07C001F013A /* Users.swift */,
 				A788597E1C40B07C001F013A /* UsersRoutes.swift */,
+				A78859971C428F48001F013A /* DropboxConnectController.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			files = (
 				A788598D1C40B07C001F013A /* Team.swift in Sources */,
 				A728119F1C406F7600C144E9 /* ViewController.swift in Sources */,
+				A78859981C428F48001F013A /* DropboxConnectController.swift in Sources */,
 				A78859811C40B07C001F013A /* BabelSerializers.swift in Sources */,
 				A78859871C40B07C001F013A /* FilesRoutes.swift in Sources */,
 				A72811EB1C40A3EF00C144E9 /* DropBoxEntry.swift in Sources */,
