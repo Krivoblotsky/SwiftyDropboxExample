@@ -19,9 +19,7 @@ class ViewController: NSViewController {
     @IBAction func getImagesButtonClicked(sender: AnyObject)
     {
         if let client = Dropbox.authorizedClient
-        {
-            self.filenames = []
-            
+        {            
             // List contents of app folder
             client.files.listFolder(path: "").response { response, error in
                 if let result = response
@@ -46,8 +44,8 @@ class ViewController: NSViewController {
         {
             print("User is not authorized")
         }
-
     }
+    
     @IBAction func linkToDropBoxButtonClicked(sender: AnyObject)
     {
         if (Dropbox.authorizedClient == nil)

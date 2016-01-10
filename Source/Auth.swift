@@ -340,11 +340,11 @@ public class DropboxAuthManager {
             
 
 #if os(iOS) || os(watchOS) || os(tvOS)
-    let controller = UINavigationController(rootViewController: web)
+    let loginController = UINavigationController(rootViewController: web)
 #else
-    let controller = web
+    let loginController = web
 #endif
-            controller.presentViewControllerModally(controller, animated: true, completion: nil)
+            controller.presentViewControllerModally(loginController, animated: true, completion: nil)
         }
     }
     

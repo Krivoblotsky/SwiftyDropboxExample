@@ -41,11 +41,19 @@ internal class DropboxConnectBaseController: DropboxConnectMultiBaseController, 
     //Constructors
     
     init() {
+        #if os(iOS) || os(watchOS) || os(tvOS)
+        super.init(nibName: nil, bundle: nil)
+        #else
         super.init(nibName: nil, bundle: nil)!
+        #endif
     }
     
     init(URL: NSURL, tryIntercept: ((url: NSURL) -> Bool)) {
-        super.init(nibName: nil, bundle: nil)!
+        #if os(iOS) || os(watchOS) || os(tvOS)
+            super.init(nibName: nil, bundle: nil)
+        #else
+            super.init(nibName: nil, bundle: nil)!
+        #endif
         self.startURL = URL
         self.tryIntercept = tryIntercept
     }
@@ -132,7 +140,7 @@ internal class DropboxConnectBaseController: DropboxConnectMultiBaseController, 
 #if os(iOS) || os(watchOS) || os(tvOS)
 
 //iOS
-private class DropboxConnectController: DropboxConnectBaseController {
+internal class DropboxConnectController: DropboxConnectBaseController {
     
     var cancelButton: UIBarButtonItem?
     
@@ -143,7 +151,7 @@ private class DropboxConnectController: DropboxConnectBaseController {
         self.navigationItem.rightBarButtonItem = self.cancelButton
     }
     
-    public override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         preloadURL()
     }

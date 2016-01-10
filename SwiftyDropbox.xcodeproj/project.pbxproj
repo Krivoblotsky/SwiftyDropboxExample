@@ -11,7 +11,6 @@
 		A728119F1C406F7600C144E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A728119E1C406F7600C144E9 /* ViewController.swift */; };
 		A72811A11C406F7600C144E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A72811A01C406F7600C144E9 /* Assets.xcassets */; };
 		A72811A41C406F7700C144E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72811A21C406F7700C144E9 /* Main.storyboard */; };
-		A72811AF1C406F7700C144E9 /* SwiftyDropboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72811AE1C406F7700C144E9 /* SwiftyDropboxTests.swift */; };
 		A72811E51C409E5C00C144E9 /* ArrayToCountTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72811E41C409E5C00C144E9 /* ArrayToCountTransformer.swift */; };
 		A72811EB1C40A3EF00C144E9 /* DropBoxEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A72811EA1C40A3EF00C144E9 /* DropBoxEntry.swift */; };
 		A788597F1C40B07C001F013A /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788596C1C40B07C001F013A /* Async.swift */; };
@@ -31,29 +30,55 @@
 		A788598D1C40B07C001F013A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788597C1C40B07C001F013A /* Team.swift */; };
 		A788598E1C40B07C001F013A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788597D1C40B07C001F013A /* Users.swift */; };
 		A788598F1C40B07C001F013A /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788597E1C40B07C001F013A /* UsersRoutes.swift */; };
-		A78859941C4131A5001F013A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78859911C412ED8001F013A /* Alamofire.framework */; };
-		A78859951C4131A5001F013A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A78859911C412ED8001F013A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A78859981C428F48001F013A /* DropboxConnectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859971C428F48001F013A /* DropboxConnectController.swift */; };
+		A78859A01C4297DD001F013A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788599F1C4297DD001F013A /* AppDelegate.swift */; };
+		A78859A21C4297DD001F013A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859A11C4297DD001F013A /* ViewController.swift */; };
+		A78859A51C4297DD001F013A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78859A31C4297DD001F013A /* Main.storyboard */; };
+		A78859A71C4297DD001F013A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A78859A61C4297DD001F013A /* Assets.xcassets */; };
+		A78859AA1C4297DD001F013A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A78859A81C4297DD001F013A /* LaunchScreen.storyboard */; };
+		A78859BD1C4297F3001F013A /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788597C1C40B07C001F013A /* Team.swift */; };
+		A78859BE1C4297F3001F013A /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788597D1C40B07C001F013A /* Users.swift */; };
+		A78859BF1C4297F3001F013A /* UsersRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788597E1C40B07C001F013A /* UsersRoutes.swift */; };
+		A78859C01C4297F3001F013A /* DropboxConnectController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859971C428F48001F013A /* DropboxConnectController.swift */; };
+		A78859C11C4297F9001F013A /* SecurityUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A78859781C40B07C001F013A /* SecurityUtil.m */; };
+		A78859C21C4297F9001F013A /* Sharing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859791C40B07C001F013A /* Sharing.swift */; };
+		A78859C31C4297F9001F013A /* SharingRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788597A1C40B07C001F013A /* SharingRoutes.swift */; };
+		A78859C41C4297FD001F013A /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788596C1C40B07C001F013A /* Async.swift */; };
+		A78859C51C4297FD001F013A /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788596D1C40B07C001F013A /* Auth.swift */; };
+		A78859C61C4297FD001F013A /* BabelSerializers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788596E1C40B07C001F013A /* BabelSerializers.swift */; };
+		A78859C71C4297FD001F013A /* BabelValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A788596F1C40B07C001F013A /* BabelValidators.swift */; };
+		A78859C81C4297FD001F013A /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859701C40B07C001F013A /* Client.swift */; };
+		A78859C91C4297FD001F013A /* DropboxClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859711C40B07C001F013A /* DropboxClient.swift */; };
+		A78859CA1C4297FD001F013A /* DropboxUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859721C40B07C001F013A /* DropboxUtil.swift */; };
+		A78859CB1C4297FD001F013A /* Files.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859731C40B07C001F013A /* Files.swift */; };
+		A78859CC1C4297FD001F013A /* FilesRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859741C40B07C001F013A /* FilesRoutes.swift */; };
+		A78859CD1C4297FD001F013A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A78859751C40B07C001F013A /* Info.plist */; };
+		A78859CE1C4297FD001F013A /* PlatformSpecificExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78859761C40B07C001F013A /* PlatformSpecificExtensions.swift */; };
+		A78859D61C429944001F013A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78859D11C4298B7001F013A /* Alamofire.framework */; };
+		A78859D71C429944001F013A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A78859D11C4298B7001F013A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A78859D91C429951001F013A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78859D31C4298B7001F013A /* Alamofire.framework */; };
+		A78859DA1C429951001F013A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A78859D31C4298B7001F013A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A72811AB1C406F7700C144E9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A72811911C406F7600C144E9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A72811981C406F7600C144E9;
-			remoteInfo = SwiftyDropbox;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		A78859961C4131A5001F013A /* Embed Frameworks */ = {
+		A78859D81C429944001F013A /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A78859951C4131A5001F013A /* Alamofire.framework in Embed Frameworks */,
+				A78859D71C429944001F013A /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A78859DB1C429951001F013A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A78859DA1C429951001F013A /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,9 +92,6 @@
 		A72811A01C406F7600C144E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A72811A31C406F7700C144E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A72811A51C406F7700C144E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A72811AA1C406F7700C144E9 /* SwiftyDropboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyDropboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A72811AE1C406F7700C144E9 /* SwiftyDropboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyDropboxTests.swift; sourceTree = "<group>"; };
-		A72811B01C406F7700C144E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A72811E41C409E5C00C144E9 /* ArrayToCountTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayToCountTransformer.swift; sourceTree = "<group>"; };
 		A72811EA1C40A3EF00C144E9 /* DropBoxEntry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropBoxEntry.swift; sourceTree = "<group>"; };
 		A788596C1C40B07C001F013A /* Async.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Async.swift; sourceTree = "<group>"; };
@@ -91,9 +113,17 @@
 		A788597C1C40B07C001F013A /* Team.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		A788597D1C40B07C001F013A /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		A788597E1C40B07C001F013A /* UsersRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersRoutes.swift; sourceTree = "<group>"; };
-		A78859911C412ED8001F013A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Dependencies/Alamofire.framework; sourceTree = "<group>"; };
 		A78859931C412F53001F013A /* SwiftyDropbox-BridgingHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "SwiftyDropbox-BridgingHeader.h"; path = "SwiftyDropbox/SwiftyDropbox-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
 		A78859971C428F48001F013A /* DropboxConnectController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropboxConnectController.swift; sourceTree = "<group>"; };
+		A788599D1C4297DD001F013A /* SwiftyDropbox-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftyDropbox-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A788599F1C4297DD001F013A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A78859A11C4297DD001F013A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A78859A41C4297DD001F013A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A78859A61C4297DD001F013A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A78859A91C4297DD001F013A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A78859AB1C4297DD001F013A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A78859D11C4298B7001F013A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		A78859D31C4298B7001F013A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +131,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A78859941C4131A5001F013A /* Alamofire.framework in Frameworks */,
+				A78859D91C429951001F013A /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A72811A71C406F7700C144E9 /* Frameworks */ = {
+		A788599A1C4297DD001F013A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78859D61C429944001F013A /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +149,8 @@
 		2589A0348FCF49BEEF4359FD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A78859911C412ED8001F013A /* Alamofire.framework */,
+				A78859D01C4298B7001F013A /* ios */,
+				A78859D21C4298B7001F013A /* osx */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -128,7 +160,7 @@
 			children = (
 				A788596B1C40B07C001F013A /* Source */,
 				A728119B1C406F7600C144E9 /* SwiftyDropbox */,
-				A72811AD1C406F7700C144E9 /* SwiftyDropboxTests */,
+				A788599E1C4297DD001F013A /* SwiftyDropbox-iOS */,
 				A728119A1C406F7600C144E9 /* Products */,
 				2589A0348FCF49BEEF4359FD /* Frameworks */,
 			);
@@ -138,7 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				A72811991C406F7600C144E9 /* SwiftyDropbox.app */,
-				A72811AA1C406F7700C144E9 /* SwiftyDropboxTests.xctest */,
+				A788599D1C4297DD001F013A /* SwiftyDropbox-iOS.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,25 +178,16 @@
 		A728119B1C406F7600C144E9 /* SwiftyDropbox */ = {
 			isa = PBXGroup;
 			children = (
+				A72811E31C409E4C00C144E9 /* Transformers */,
 				A78859931C412F53001F013A /* SwiftyDropbox-BridgingHeader.h */,
 				A728119C1C406F7600C144E9 /* AppDelegate.swift */,
 				A728119E1C406F7600C144E9 /* ViewController.swift */,
 				A72811EA1C40A3EF00C144E9 /* DropBoxEntry.swift */,
-				A72811E31C409E4C00C144E9 /* Transformers */,
 				A72811A01C406F7600C144E9 /* Assets.xcassets */,
 				A72811A21C406F7700C144E9 /* Main.storyboard */,
 				A72811A51C406F7700C144E9 /* Info.plist */,
 			);
 			path = SwiftyDropbox;
-			sourceTree = "<group>";
-		};
-		A72811AD1C406F7700C144E9 /* SwiftyDropboxTests */ = {
-			isa = PBXGroup;
-			children = (
-				A72811AE1C406F7700C144E9 /* SwiftyDropboxTests.swift */,
-				A72811B01C406F7700C144E9 /* Info.plist */,
-			);
-			path = SwiftyDropboxTests;
 			sourceTree = "<group>";
 		};
 		A72811E31C409E4C00C144E9 /* Transformers */ = {
@@ -202,6 +225,37 @@
 			path = Source;
 			sourceTree = "<group>";
 		};
+		A788599E1C4297DD001F013A /* SwiftyDropbox-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A788599F1C4297DD001F013A /* AppDelegate.swift */,
+				A78859A11C4297DD001F013A /* ViewController.swift */,
+				A78859A31C4297DD001F013A /* Main.storyboard */,
+				A78859A61C4297DD001F013A /* Assets.xcassets */,
+				A78859A81C4297DD001F013A /* LaunchScreen.storyboard */,
+				A78859AB1C4297DD001F013A /* Info.plist */,
+			);
+			path = "SwiftyDropbox-iOS";
+			sourceTree = "<group>";
+		};
+		A78859D01C4298B7001F013A /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				A78859D11C4298B7001F013A /* Alamofire.framework */,
+			);
+			name = ios;
+			path = Dependencies/ios;
+			sourceTree = "<group>";
+		};
+		A78859D21C4298B7001F013A /* osx */ = {
+			isa = PBXGroup;
+			children = (
+				A78859D31C4298B7001F013A /* Alamofire.framework */,
+			);
+			name = osx;
+			path = Dependencies/osx;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -212,7 +266,7 @@
 				A72811951C406F7600C144E9 /* Sources */,
 				A72811961C406F7600C144E9 /* Frameworks */,
 				A72811971C406F7600C144E9 /* Resources */,
-				A78859961C4131A5001F013A /* Embed Frameworks */,
+				A78859DB1C429951001F013A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -223,23 +277,23 @@
 			productReference = A72811991C406F7600C144E9 /* SwiftyDropbox.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A72811A91C406F7700C144E9 /* SwiftyDropboxTests */ = {
+		A788599C1C4297DD001F013A /* SwiftyDropbox-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A72811B61C406F7700C144E9 /* Build configuration list for PBXNativeTarget "SwiftyDropboxTests" */;
+			buildConfigurationList = A78859B71C4297DD001F013A /* Build configuration list for PBXNativeTarget "SwiftyDropbox-iOS" */;
 			buildPhases = (
-				A72811A61C406F7700C144E9 /* Sources */,
-				A72811A71C406F7700C144E9 /* Frameworks */,
-				A72811A81C406F7700C144E9 /* Resources */,
+				A78859991C4297DD001F013A /* Sources */,
+				A788599A1C4297DD001F013A /* Frameworks */,
+				A788599B1C4297DD001F013A /* Resources */,
+				A78859D81C429944001F013A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A72811AC1C406F7700C144E9 /* PBXTargetDependency */,
 			);
-			name = SwiftyDropboxTests;
-			productName = SwiftyDropboxTests;
-			productReference = A72811AA1C406F7700C144E9 /* SwiftyDropboxTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "SwiftyDropbox-iOS";
+			productName = "SwiftyDropbox-iOS";
+			productReference = A788599D1C4297DD001F013A /* SwiftyDropbox-iOS.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -254,9 +308,8 @@
 					A72811981C406F7600C144E9 = {
 						CreatedOnToolsVersion = 7.1;
 					};
-					A72811A91C406F7700C144E9 = {
+					A788599C1C4297DD001F013A = {
 						CreatedOnToolsVersion = 7.1;
-						TestTargetID = A72811981C406F7600C144E9;
 					};
 				};
 			};
@@ -274,7 +327,7 @@
 			projectRoot = "";
 			targets = (
 				A72811981C406F7600C144E9 /* SwiftyDropbox */,
-				A72811A91C406F7700C144E9 /* SwiftyDropboxTests */,
+				A788599C1C4297DD001F013A /* SwiftyDropbox-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -290,10 +343,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A72811A81C406F7700C144E9 /* Resources */ = {
+		A788599B1C4297DD001F013A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A78859CD1C4297FD001F013A /* Info.plist in Resources */,
+				A78859AA1C4297DD001F013A /* LaunchScreen.storyboard in Resources */,
+				A78859A71C4297DD001F013A /* Assets.xcassets in Resources */,
+				A78859A51C4297DD001F013A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,23 +385,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A72811A61C406F7700C144E9 /* Sources */ = {
+		A78859991C4297DD001F013A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A72811AF1C406F7700C144E9 /* SwiftyDropboxTests.swift in Sources */,
+				A78859C61C4297FD001F013A /* BabelSerializers.swift in Sources */,
+				A78859CC1C4297FD001F013A /* FilesRoutes.swift in Sources */,
+				A78859BE1C4297F3001F013A /* Users.swift in Sources */,
+				A78859C31C4297F9001F013A /* SharingRoutes.swift in Sources */,
+				A78859C91C4297FD001F013A /* DropboxClient.swift in Sources */,
+				A78859BD1C4297F3001F013A /* Team.swift in Sources */,
+				A78859A21C4297DD001F013A /* ViewController.swift in Sources */,
+				A78859C11C4297F9001F013A /* SecurityUtil.m in Sources */,
+				A78859C21C4297F9001F013A /* Sharing.swift in Sources */,
+				A78859CA1C4297FD001F013A /* DropboxUtil.swift in Sources */,
+				A78859C71C4297FD001F013A /* BabelValidators.swift in Sources */,
+				A78859CB1C4297FD001F013A /* Files.swift in Sources */,
+				A78859C81C4297FD001F013A /* Client.swift in Sources */,
+				A78859C51C4297FD001F013A /* Auth.swift in Sources */,
+				A78859BF1C4297F3001F013A /* UsersRoutes.swift in Sources */,
+				A78859CE1C4297FD001F013A /* PlatformSpecificExtensions.swift in Sources */,
+				A78859A01C4297DD001F013A /* AppDelegate.swift in Sources */,
+				A78859C41C4297FD001F013A /* Async.swift in Sources */,
+				A78859C01C4297F3001F013A /* DropboxConnectController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A72811AC1C406F7700C144E9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A72811981C406F7600C144E9 /* SwiftyDropbox */;
-			targetProxy = A72811AB1C406F7700C144E9 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A72811A21C406F7700C144E9 /* Main.storyboard */ = {
@@ -353,6 +420,22 @@
 				A72811A31C406F7700C144E9 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A78859A31C4297DD001F013A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A78859A41C4297DD001F013A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A78859A81C4297DD001F013A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A78859A91C4297DD001F013A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -446,6 +529,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies",
+					"$(PROJECT_DIR)/Dependencies/osx",
 				);
 				INFOPLIST_FILE = SwiftyDropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -463,6 +547,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Dependencies",
+					"$(PROJECT_DIR)/Dependencies/osx",
 				);
 				INFOPLIST_FILE = SwiftyDropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -472,29 +557,46 @@
 			};
 			name = Release;
 		};
-		A72811B71C406F7700C144E9 /* Debug */ = {
+		A78859B81C4297DD001F013A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwiftyDropboxTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.home.flashCloudInstaller.SwiftyDropboxTests;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies",
+					"$(PROJECT_DIR)/Dependencies/ios",
+				);
+				INFOPLIST_FILE = "SwiftyDropbox-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.home.swiftyexampleios.SwiftyDropbox-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyDropbox.app/Contents/MacOS/SwiftyDropbox";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyDropbox/SwiftyDropbox-BridgingHeader.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		A72811B81C406F7700C144E9 /* Release */ = {
+		A78859B91C4297DD001F013A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = SwiftyDropboxTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.home.flashCloudInstaller.SwiftyDropboxTests;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Dependencies",
+					"$(PROJECT_DIR)/Dependencies/ios",
+				);
+				INFOPLIST_FILE = "SwiftyDropbox-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.home.swiftyexampleios.SwiftyDropbox-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftyDropbox.app/Contents/MacOS/SwiftyDropbox";
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyDropbox/SwiftyDropbox-BridgingHeader.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -519,14 +621,13 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A72811B61C406F7700C144E9 /* Build configuration list for PBXNativeTarget "SwiftyDropboxTests" */ = {
+		A78859B71C4297DD001F013A /* Build configuration list for PBXNativeTarget "SwiftyDropbox-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A72811B71C406F7700C144E9 /* Debug */,
-				A72811B81C406F7700C144E9 /* Release */,
+				A78859B81C4297DD001F013A /* Debug */,
+				A78859B91C4297DD001F013A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
