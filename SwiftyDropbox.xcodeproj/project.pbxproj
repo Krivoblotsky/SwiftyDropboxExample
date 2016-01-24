@@ -58,6 +58,8 @@
 		A78859D71C429944001F013A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A78859D11C4298B7001F013A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A78859D91C429951001F013A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A78859D31C4298B7001F013A /* Alamofire.framework */; };
 		A78859DA1C429951001F013A /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A78859D31C4298B7001F013A /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A78C3D661C5543DF00F7B3CE /* BrowserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C3D651C5543DF00F7B3CE /* BrowserAuth.swift */; };
+		A78C3D671C5545EE00F7B3CE /* BrowserAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78C3D651C5543DF00F7B3CE /* BrowserAuth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -124,6 +126,7 @@
 		A78859AB1C4297DD001F013A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A78859D11C4298B7001F013A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
 		A78859D31C4298B7001F013A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Alamofire.framework; sourceTree = "<group>"; };
+		A78C3D651C5543DF00F7B3CE /* BrowserAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserAuth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +223,7 @@
 				A788597C1C40B07C001F013A /* Team.swift */,
 				A788597D1C40B07C001F013A /* Users.swift */,
 				A788597E1C40B07C001F013A /* UsersRoutes.swift */,
+				A78C3D651C5543DF00F7B3CE /* BrowserAuth.swift */,
 				A78859971C428F48001F013A /* DropboxConnectController.swift */,
 			);
 			path = Source;
@@ -367,6 +371,7 @@
 				A78859811C40B07C001F013A /* BabelSerializers.swift in Sources */,
 				A78859871C40B07C001F013A /* FilesRoutes.swift in Sources */,
 				A72811EB1C40A3EF00C144E9 /* DropBoxEntry.swift in Sources */,
+				A78C3D661C5543DF00F7B3CE /* BrowserAuth.swift in Sources */,
 				A788598E1C40B07C001F013A /* Users.swift in Sources */,
 				A788598B1C40B07C001F013A /* Sharing.swift in Sources */,
 				A78859851C40B07C001F013A /* DropboxUtil.swift in Sources */,
@@ -407,6 +412,7 @@
 				A78859CE1C4297FD001F013A /* PlatformSpecificExtensions.swift in Sources */,
 				A78859A01C4297DD001F013A /* AppDelegate.swift in Sources */,
 				A78859C41C4297FD001F013A /* Async.swift in Sources */,
+				A78C3D671C5545EE00F7B3CE /* BrowserAuth.swift in Sources */,
 				A78859C01C4297F3001F013A /* DropboxConnectController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -628,6 +634,7 @@
 				A78859B91C4297DD001F013A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
